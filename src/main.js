@@ -14,7 +14,9 @@ Vue.use(VueRouter);
 Vue.use(BootstrapVue);
 Vue.use(Vuex)
 
-Vue.http.options.root = 'http://192.168.0.5/ahorcado-spring/';
+//Vue.http.options.root = 'http://192.168.0.5/ahorcado-spring/';
+Vue.http.options.root = 'http://raspberrytronxi.ddns.net/ahorcado-spring/';
+
 const routes = [
   {path:'/', redirect:'/temas'},
   {path:'/temas', component: EleccionTemas},
